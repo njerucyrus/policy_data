@@ -85,7 +85,6 @@ PyJWT==1.5.3
 pyodbc==4.0.24
 pyOpenSSL==17.5.0
 Pyphen==0.9.4
-pypiwin32==223
 python-dateutil==2.5.3
 python-jwt==2.0.1
 pytz==2018.3
