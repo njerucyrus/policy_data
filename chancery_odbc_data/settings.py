@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/1.11/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.11/ref/settings/
 """
+import dj_database_url
 
 import os
 
@@ -24,7 +25,7 @@ SECRET_KEY = 'u7hwl9a16l8d_ozd!^msth*&gd6wvz82hbmnbwgvbi$e)&v_b#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -93,6 +94,10 @@ DATABASES = {
         'host_is_server': True
     },
 }
+
+DATABASES['default'] = dj_database_url.config(conn_max_age=600)
+DATABASES['default'] = dj_database_url.config(default='mssql://githae:123.@169.254.151.167:1433/chancery', conn_max_age=600)
+DATABASES['default'] = dj_database_url.parse('mssql://githae:123.@169.254.151.167:1433/chancery', conn_max_age=600)
 
 DATABASE_CONNECTION_POOLING = False
 
