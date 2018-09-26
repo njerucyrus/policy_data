@@ -1,0 +1,1 @@
+web: gunicorn chancery_odbc_data.wsgi —-log-file -
