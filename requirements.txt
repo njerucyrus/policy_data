@@ -90,7 +90,7 @@ python-jwt==2.0.1
 pytz==2018.3
 requests==2.12.4
 requests-toolbelt==0.7.0
-rsa==3.4.2
+rsa==4.1
 s3transfer==0.1.4
 six==1.10.0
 tinycss==0.4
