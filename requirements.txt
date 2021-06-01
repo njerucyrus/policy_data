@@ -97,7 +97,7 @@ tinycss==0.4
 twilio==5.4.0
 typing==3.6.2
 uritemplate==3.0.0
-urllib3==1.22
+urllib3==1.26.5
 WeasyPrint==0.34
 webencodings==0.5
 whitenoise==3.2.1
